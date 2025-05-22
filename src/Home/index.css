@@ -181,7 +181,7 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: 150px;
+  gap: 60px 150px;
 }
 
 .card {
@@ -291,4 +291,36 @@ h1 {
   bottom: 0px;
   right: 10px;
   text-align: left;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: #b5def6;
+  padding: 40px 80px;
+  color: #191919;
+}
+
+.footerLogo {
+  font-size: 40px;
+}
+
+.allConnection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.socialNet {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 40px;
 }

@@ -83,7 +83,48 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          
+
+            <div className="card">
+              <span className="top-right">
+                <img src={starImg} alt="Зірка" />
+              </span>
+              <img src={monopolyImg} alt="Монополія" />
+              <div className="card-content">
+                <div className="bottom-left">
+                  <p className="text">Місця: 24 шт</p>
+                  <p className="cost">Ціна: 200 грн</p>
+                </div>
+                <div className="bottom-right">
+                  <p className="text">Дата: 19 жовтня</p>
+                  <p className="text">Початок: 17:00</p>
+                </div>
+                <div className="top-left">
+                  <p className="size">Монополія</p>
+                  <p className="text">Чернівці</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <span className="top-right">
+                <img src={starImg} alt="Зірка" />
+              </span>
+              <img src={monopolyImg} alt="Монополія" />
+              <div className="card-content">
+                <div className="bottom-left">
+                  <p className="text">Місця: 24 шт</p>
+                  <p className="cost">Ціна: 200 грн</p>
+                </div>
+                <div className="bottom-right">
+                  <p className="text">Дата: 19 жовтня</p>
+                  <p className="text">Початок: 17:00</p>
+                </div>
+                <div className="top-left">
+                  <p className="size">Монополія</p>
+                  <p className="text">Чернівці</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -115,6 +156,23 @@ const Home = () => {
           </div>
         </div>
       </main>
+      <footer className="footer">
+        <div className="footerLogo">TableCrew</div>
+        <div className="allConnection">
+          <div className="contacts">
+            <div>tablecrew@gmail.com</div>
+            <div>+380xxxxxxx</div>
+          </div>
+
+          <div className="socialNet">
+            <i className="fa-brands fa-telegram telegram"></i>
+
+            <i className="fa-brands fa-instagram instagram"></i>
+
+            <i className="fa-brands fa-facebook facebook"></i>
+          </div>
+        </div>
+      </footer>
       
     </>
   );
