@@ -4,20 +4,25 @@ import Main from "./Main";
 import Registation from "./Registration";
 import Login from "./Login";
 import Home from "./Home";
+import CreateRoom from "./CreateRoom";
+import Account from "./Account";
 
 
 function App() {
   return (
-      <Home />;
-    <Router>
-      <Routes>
-        <Route path="/" element={<Main></Main>} />
-        <Route path="/registration" element={<Registation></Registation>} />
-        <Route path="/login" element={<Login></Login>} />
-      </Routes>
-    </Router>
+    // <Home></Home>
+    <Account></Account>
+    // <CreateRoom></CreateRoom>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={<Main></Main>} />
+    //     <Route path="/registration" element={<Registation></Registation>} />
+    //     <Route path="/login" element={<Login></Login>} />
+    //   </Routes>
+    // </Router>
   );
 }
 
+export default App;
 
 
