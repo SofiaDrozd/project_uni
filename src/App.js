@@ -1,12 +1,19 @@
-import Main from "./Main";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Main from "./Main";
+// import Registation from "./Registration";
+// import Login from "./Login"
 
-function App() {
-  return (
-    <>
-      <Main /> 
 
-    </>
-  );
-}
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Main></Main>} />
+//         <Route path="/registration" element={<Registation></Registation>} />
+//         <Route path="/login" element={<Login></Login>} />
+//       </Routes>
+//     </Router>
+//   );
+// }
 
-export default App;
+// export default App;

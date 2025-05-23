@@ -1,11 +1,13 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 import photo from "./headerPhoto.png";
 import aboutUs1 from "./aboutUs1.png";
 import aboutUs2 from "./aboutUs2.png";
 import photoGame1 from "./photoGame1.png";
 import photoGame2 from "./photoGame2.png";
 import photoGame3 from "./photoGame3.png";
+import Registation from "../Registration";
 
 const Main = () => {
   return (
@@ -13,12 +15,12 @@ const Main = () => {
       <header className="header">
         <div className="logo">TableCrew</div>
         <div className="headerLinks">
-          <a className="registr" href="#">
+          <Link className="registr" to="/registration">
             Реєстрація
-          </a>
-          <a className="logIn" href="#">
+          </Link>
+          <Link className="logIn" to="/login">
             Вхід
-          </a>
+          </Link>
         </div>
       </header>
       <main className="main">
@@ -26,7 +28,9 @@ const Main = () => {
         <div className="overlowText">
           <div className="found">Знайди своїх </div>
           <div className="subdue">підкорюй світ гри!</div>
-          <button className="buttonJoin">Приєднатись</button>
+          <Link className="buttonJoin" to="/login">
+            Приєднатись
+          </Link>
         </div>
 
         <div className="aboutUs">
@@ -57,7 +61,9 @@ const Main = () => {
 
         <div className="joinUs">
           <div>Реєструйся щоб поринути у світ гри разом з нами</div>
-          <button className="buttonJoin">Приєднатись</button>
+          <Link className="buttonJoin1" to="/login">
+            Приєднатись
+          </Link>
         </div>
 
         <div className="photoFromGames">
