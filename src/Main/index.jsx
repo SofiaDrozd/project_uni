@@ -3,6 +3,9 @@ import "./index.css";
 import photo from "./headerPhoto.png";
 import aboutUs1 from "./aboutUs1.png";
 import aboutUs2 from "./aboutUs2.png";
+import photoGame1 from "./photoGame1.png";
+import photoGame2 from "./photoGame2.png";
+import photoGame3 from "./photoGame3.png";
 
 const Main = () => {
   return (
@@ -51,7 +54,39 @@ const Main = () => {
             <img src={aboutUs2} alt="aboutUs2"></img>
           </div>
         </div>
+
+        <div className="joinUs">
+          <div>Реєструйся щоб поринути у світ гри разом з нами</div>
+          <button className="buttonJoin">Приєднатись</button>
+        </div>
+
+        <div className="photoFromGames">
+          <div className="photoGamesPhrase">Фото з заходів</div>
+          <div className="allPhotoGames">
+            <img src={photoGame1} alt="photoGame1" />
+            <img src={photoGame2} alt="photoGame2" />
+            <img src={photoGame3} alt="photoGame3" />
+          </div>
+        </div>
       </main>
+
+      <footer className="footer">
+        <div className="footerLogo">TableCrew</div>
+        <div className="allConnection">
+          <div className="contacts">
+            <div>tablecrew@gmail.com</div>
+            <div>+380xxxxxxx</div>
+          </div>
+
+          <div className="socialNet">
+            <i className="fa-brands fa-telegram telegram"></i>
+
+            <i className="fa-brands fa-instagram instagram"></i>
+
+            <i className="fa-brands fa-facebook facebook"></i>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
