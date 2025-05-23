@@ -78,10 +78,25 @@ html {
   border: none;
   cursor: pointer;
   background-color: #f6f9fe;
+  color: #191919;
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 20px;
   margin-top: 40px;
+  text-decoration: none;
+}
+
+.buttonJoin1 {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #f6f9fe;
+  color: #191919;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .aboutUs {
@@ -138,10 +153,6 @@ html {
   margin-top: 40px;
   font-size: 24px;
   color: #191919;
-}
-
-.joinUs button {
-  margin-bottom: 40px;
 }
 
 .photoFromGames {
