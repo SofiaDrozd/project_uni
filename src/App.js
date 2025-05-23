@@ -10,19 +10,21 @@ import Account from "./Account";
 
 function App() {
   return (
-    // <Home></Home>
+   <Home></Home>
     <Account></Account>
-    // <CreateRoom></CreateRoom>
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Main></Main>} />
-    //     <Route path="/registration" element={<Registation></Registation>} />
-    //     <Route path="/login" element={<Login></Login>} />
-    //   </Routes>
-    // </Router>
+    <CreateRoom></CreateRoom>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main></Main>} />
+        <Route path="/registration" element={<Registation></Registation>} />
+        <Route path="/login" element={<Login></Login>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/rooms" element={<Rooms />} />
+      </Routes>
+    </Router>
+
   );
 }
 
 export default App;
-
 
