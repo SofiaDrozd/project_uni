@@ -1,10 +1,11 @@
 import React from "react";
 import './index.css';
-import monopolyImg from './image3.png';
-import starImg from './star.svg';
-import photo from "./headerPhoto.png";
-import aboutUs1 from "./aboutUs1.png";
-import aboutUs2 from "./aboutUs2.png";
+import { Link } from 'react-router-dom';
+import monopolyImg from '../assets/img/image3.png';
+import starImg from '../assets/img/star.svg';
+import photo from "../assets/img/headerPhoto.png";
+import aboutUs1 from "../assets/img/aboutUs1.png";
+import aboutUs2 from "../assets/img/aboutUs2.png";
 
 const Home = () => {
   return (
@@ -18,10 +19,9 @@ const Home = () => {
           <a href="#" className="nav-link">Заходи</a>
         </nav>
         <div className="headerLinks">
-          <a className="registr" href="#">
+          <a className="account" href="#">
             Акаунт
           </a>
-          
         </div>
       </header>
       <main className="main">
@@ -40,6 +40,7 @@ const Home = () => {
             <button className="city-button">Київ</button>
             <button className="city-button">Львів</button>
             <button className="city-button">Івано-Франківськ</button>
+            <Link to="/rooms" className="city-link">Більше кімнат...</Link>
           </div>
           <div className="grid">
             <div className="card">
@@ -158,6 +159,11 @@ const Home = () => {
       </main>
       <footer className="footer">
         <div className="footerLogo">TableCrew</div>
+        <nav className="navLinks down">
+          <a href="#" className="nav-link nav-link--mod">Головна</a>
+          <a href="#" className="nav-link nav-link--mod">Кімнати</a>
+          <a href="#" className="nav-link nav-link--mod">Про нас</a>
+        </nav>
         <div className="allConnection">
           <div className="contacts">
             <div>tablecrew@gmail.com</div>

@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.buttonJoin {
-  
-}
+
 .rasa-uniquifier {
   font-family: "Rasa", serif;
   font-optical-sizing: auto;
@@ -47,6 +45,17 @@ html {
   border-bottom: 1px solid #f6f9fe;
 }
 
+.down {
+  width: 100%;
+  justify-content: center; 
+  gap: 80px;
+  margin-top: -25px;
+
+}
+
+.nav-link--mod {
+  color: #191919;
+}
 
 
 
@@ -63,8 +72,7 @@ html {
   border-bottom: 1px solid  transparent;
 }
 
-.account,
-.logIn:hover {
+.account:hover {
     border-bottom: 1px solid  #f6f9fe;
 }
 
@@ -72,10 +80,7 @@ html {
   position: relative;
 }
 
-.photoHeader {
-  width: 100%;
-  margin-top: 20px;
-}
+
 
 .overlowText {
   position: absolute;
@@ -105,14 +110,53 @@ html {
   font-size: 20px;
   margin-top: 40px;
 }
+
 .aboutUs {
-  margin: 40px 80px;
+  margin: 10px 80px; 
+  margin-bottom: 200px;
 }
 
-.phraseAbout {
-  font-size: 30px;
-  color: #f6f9fe;
+.container {
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
 }
+
+.containerSelect, .containerInput, .containerButton {
+  background-color: #90c3e8;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  color: #1e3663;
+  border-radius: 4px;
+}
+
+.containerInput {
+  width: 250px;
+}
+
+.containerSelect {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 25px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%231e3663" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+  margin-right: 60px;
+  width: 250px;
+}
+
+.containerButton {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1e3663;
+}
+
+
 
 .aboutUsContainer1 {
   display: flex;
@@ -179,12 +223,6 @@ h1 {
   color: black;
 }
 
-.city-link {
-  text-decoration: none;
-  color: #cecece;
-  margin-top: 30px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -203,7 +241,7 @@ h1 {
   height: 200px;
 }
 
-.card img {
+.card-img {
   display: block;
   width: 180px;
   height: 180px;
@@ -330,4 +368,97 @@ h1 {
   flex-direction: row;
   gap: 20px;
   font-size: 40px;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(183, 183, 183, 0.5);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.modal-content {
+  background-color: #1C3B6A;
+  color: #191919;
+  width: 800px;
+  height: 560px;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+
+
+.modal-topcard {
+  padding: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #FFFFFF;
+  height: 180px;
+}
+
+.modal-text {
+  line-height: 1.2;
+  margin: 0;
+}
+
+.modal_right {
+  text-align: right;
+}
+
+.modal-name {
+  text-align: center;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.modal-button {
+  background-color: #FFC548;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: none;
+  width: 200px;
+  font-size: 16px;
+}
+
+.modal-exs {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal_top-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;      /* або 20px для ще меншої */
+  height: 30px;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.modal_button-right {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 22px;
+}
+
+.modal__game {
+  margin-bottom: 20px;
+}
+
+.modal-cost {
+  font-size: 22px;
 }
