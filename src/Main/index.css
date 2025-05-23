@@ -1,3 +1,128 @@
-h1 {
-    color: pink;
+* {
+  box-sizing: border-box;
 }
+
+.rasa-uniquifier {
+  font-family: "Rasa", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #1c3b6a;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 80px;
+}
+
+.logo {
+  color: #f6f9fe;
+  font-size: 40px;
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.registr,
+.logIn {
+  text-decoration: none;
+  color: #f6f9fe;
+  font-size: 20px;
+   border-bottom: 1px solid  transparent;
+}
+
+.registr:hover,
+.logIn:hover {
+    border-bottom: 1px solid  #f6f9fe;
+}
+
+.main {
+  position: relative;
+}
+
+.photoHeader {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.overlowText {
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.found {
+  font-size: 90px;
+}
+
+.subdue {
+  font-size: 40px;
+}
+
+.buttonJoin {
+  border: none;
+  cursor: pointer;
+  background-color: #f6f9fe;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.aboutUs {
+  margin: 40px 80px;
+}
+
+.phraseAbout {
+  font-size: 30px;
+  color: #f6f9fe;
+}
+
+.aboutUsContainer1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.aboutUsContainer1 div,
+.aboutUsContainer2 div {
+    max-width: 600px;
+    color: #f6f9fe;
+    font-size: 18px;
+}
+
+.aboutUsContainer2 div {
+    text-align: right;
+}
+
+.aboutUsContainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 100px;
+}
+
+.aboutUsContainer1 img,
+.aboutUsContainer2 img {
+    width: 400px;
+}
+
+
