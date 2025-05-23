@@ -47,15 +47,6 @@ html {
   border-bottom: 1px solid #f6f9fe;
 }
 
-
-
-
-.headerLinks {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
 .account {
   text-decoration: none;
   color: #f6f9fe;
@@ -67,6 +58,14 @@ html {
 .logIn:hover {
     border-bottom: 1px solid  #f6f9fe;
 }
+
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 
 .main {
   position: relative;
