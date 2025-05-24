@@ -15,7 +15,7 @@ html {
 }
 
 .createRoom {
-  margin: 40px 80px;
+  margin: -95px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,8 +62,15 @@ html {
   cursor: pointer;
 }
 
+.topBar {
+  display: flex;
+  justify-content: flex-end; /* вирівнює кнопку по правому краю */
+  margin: 40px 80px;
+}
+
 .logoutBtn {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
   color: #f4f7f9;
   background-color: rgba(242, 71, 71, 1);
   border: none;

@@ -14,14 +14,14 @@ const Home = () => {
         <div className="logo">TableCrew</div>
         <nav className="navLinks">
           <a href="#" className="nav-link">Головна</a>
-          <a href="#" className="nav-link">Кімнати</a>
+          <Link to="/rooms" className="nav-link">Кімнати</Link>
           <a href="#" className="nav-link">Про нас</a>
           <a href="#" className="nav-link">Заходи</a>
         </nav>
         <div className="headerLinks">
-          <a className="account" href="#">
+          <Link className="account" to='/account'>
             Акаунт
-          </a>
+          </Link>
         </div>
       </header>
       <main className="main">
@@ -29,7 +29,7 @@ const Home = () => {
         <div className="overlowText">
           <div className="found">Знайди своїх </div>
           <div className="subdue">підкорюй світ гри!</div>
-          <button className="buttonJoin">Приєднатись</button>
+          <Link className="buttonJoin" to="/rooms">Приєднатись</Link>
         </div>
 
 

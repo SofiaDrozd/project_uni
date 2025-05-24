@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import './index.css';
-import monopolyImg from '../assets/img/image3.png';
-import starImg from '../assets/img/star.svg';
+import React, { useState } from "react";
+import "./index.css";
+import { Link } from "react-router-dom";
+import monopolyImg from "../assets/img/image3.png";
+import starImg from "../assets/img/star.svg";
 
 const Rooms = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,13 +33,23 @@ const Rooms = () => {
       <header className="header">
         <div className="logo">TableCrew</div>
         <nav className="navLinks">
-          <a href="#" className="nav-link">Головна</a>
-          <a href="#" className="nav-link">Кімнати</a>
-          <a href="#" className="nav-link">Про нас</a>
-          <a href="#" className="nav-link">Заходи</a>
+          <Link to="/" className="nav-link">
+            Головна
+          </Link>
+          <Link to="/rooms" className="nav-link">
+            Кімнати
+          </Link>
+          <a href="#" className="nav-link">
+            Про нас
+          </a>
+          <a href="#" className="nav-link">
+            Заходи
+          </a>
         </nav>
         <div className="headerLinks">
-          <a className="account" href="#">Акаунт</a>
+          <Link className="account" to="/account">
+            Акаунт
+          </Link>
         </div>
       </header>
 
@@ -56,8 +67,10 @@ const Rooms = () => {
 
         <div className="rooms">
           <div className="grid">
+
             <div className="card" onClick={() => openModal({
             })}>
+            
               <div className="top-right">
                 <img src={starImg} alt="Зірка" />
               </div>
@@ -77,6 +90,7 @@ const Rooms = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </main>
@@ -84,9 +98,15 @@ const Rooms = () => {
       <footer className="footer">
         <div className="footerLogo">TableCrew</div>
         <nav className="navLinks down">
-          <a href="#" className="nav-link nav-link--mod">Головна</a>
-          <a href="#" className="nav-link nav-link--mod">Кімнати</a>
-          <a href="#" className="nav-link nav-link--mod">Про нас</a>
+          <a href="#" className="nav-link nav-link--mod">
+            Головна
+          </a>
+          <a href="#" className="nav-link nav-link--mod">
+            Кімнати
+          </a>
+          <a href="#" className="nav-link nav-link--mod">
+            Про нас
+          </a>
         </nav>
         <div className="allConnection">
           <div className="contacts">
@@ -128,13 +148,31 @@ const Rooms = () => {
             <div className="modal-exs">
               <div className="modal-name">Гра &quot;монополія&quot;</div>
               <div className="modal__game">
-                Монополія — це класична економічна настільна гра, яка перетворює тебе на справжнього магната! Мета гри — купувати, будувати та збагачуватись, поступово зводячи суперників до банкрутства.<br />
-                🔑 Що на тебе чекає?<br />
-                Купівля нерухомості, будівництво, торги, несподіванки...<br />
-                👥 Гравці: 2–6<br />
-                ⏱ Тривалість: 1–2 години<br />
+                Монополія — це класична економічна настільна гра, яка перетворює
+                тебе на справжнього магната! Мета гри — купувати, будувати та
+                збагачуватись, поступово зводячи суперників до банкрутства.
+                <br />
+                🔑 Що на тебе чекає?
+                <br />
+                Купівля нерухомості: стань власником вулиць, залізниць і
+                комунальних підприємств.
+                <br />
+                Будівництво: зводь будинки та готелі, щоб підвищити орендну
+                плату.
+                <br />
+                Торги й угоди: домовляйся з іншими гравцями, укладай вигідні
+                угоди.
+                <br />
+                Несподіванки: картки «Шанс» і «Скриня громади» можуть як
+                допомогти, так і завадити.
+                <br />
+                👥 Кількість гравців: 2–6  <br />
+                ⏱ Тривалість гри: 1–2 години  <br />
                 📈 Вік: від 8 років
-                
+                <br />
+                Монополія — це гра про стратегію, удачу та вміння вести
+                переговори. Ідеально підходить для вечора з друзями або родиною.
+                Випробуй себе у світі великих грошей!
               </div>
               <div className="modal_cost">Ціна: 200 грн</div>
               <button className="modal-button" onClick={() => setIsModalOpen(false)}>Підтверидити запис</button>
