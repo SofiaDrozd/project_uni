@@ -45,7 +45,17 @@ html {
   border-bottom: 1px solid #f6f9fe;
 }
 
+.account {
+  text-decoration: none;
+  color: #f6f9fe;
+  font-size: 30px;
+  border-bottom: 1px solid  transparent;
+}
 
+.account,
+.logIn:hover {
+    border-bottom: 1px solid  #f6f9fe;
+}
 
 
 .headerLinks {
@@ -54,17 +64,7 @@ html {
   gap: 40px;
 }
 
-.registr {
-  text-decoration: none;
-  color: #f6f9fe;
-  font-size: 30px;
-  border-bottom: 1px solid  transparent;
-}
 
-.registr:hover,
-.logIn:hover {
-    border-bottom: 1px solid  #f6f9fe;
-}
 
 .main {
   position: relative;

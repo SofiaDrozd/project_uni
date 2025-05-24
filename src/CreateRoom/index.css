@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.rasa-uniquifier {
+  font-family: "Rasa", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #1c3b6a;
+}
+
+.createRoom {
+  margin: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.createRoomPhrase {
+  font-size: 40px;
+  color: #f6f9fe;
+}
+
+.createRoomForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 150px;
+  background-color: rgba(136, 190, 223, 0.7);
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.createRoomForm input {
+  width: 600px;
+  padding: 10px;
+  border: none;
+  background-color: #f4f7f9;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.createRoomForm input:focus {
+  outline: none;
+}
+
+.createRoomButton {
+  margin-top: 20px;
+  color: #f4f7f9;
+  background-color: #1c3b6a;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logoutBtn {
+  margin-top: 20px;
+  color: #f4f7f9;
+  background-color: rgba(242, 71, 71, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 35px;
+  font-size: 20px;
+  cursor: pointer;
+}

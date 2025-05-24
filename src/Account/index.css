@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.rasa-uniquifier {
+  font-family: "Rasa", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #1c3b6a;
+}
+
+.accountUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.userCard {
+  color: #f4f7f9;
+  font-size: 40px;
+}
+
+.userPhoto {
+    margin-top: 40px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #69a9c9; 
+  border-radius: 10px;
+  overflow: hidden;
+  width: 600px;
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px 15px;
+  border: 1px solid #ffffff55;
+  color: #000;
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 250px;
+}
+
+.userLogoutBtn {
+  margin-top: 20px;
+  color: #f4f7f9;
+  background-color: rgba(242, 71, 71, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
