@@ -13,6 +13,21 @@ const Rooms = () => {
     setIsModalOpen(true);
   };
 
+  
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = originalStyle;
+    }
+
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, [isModalOpen]);
+
   return (
     <>
       <header className="header">
@@ -37,6 +52,7 @@ const Rooms = () => {
           </Link>
         </div>
       </header>
+
       <main className="main">
         <div className="container">
           <select className="containerSelect">
@@ -45,27 +61,16 @@ const Rooms = () => {
             <option>Львів</option>
             <option>Одеса</option>
           </select>
-          <input
-            type="text"
-            placeholder="Знайти за датою"
-            className="containerInput"
-          />
+          <input type="text" placeholder="Знайти за датою" className="containerInput" />
           <button className="containerButton">&times;</button>
         </div>
 
-        <div className="aboutUs">
+        <div className="rooms">
           <div className="grid">
-            <div
-              className="card"
-              onClick={() =>
-                openModal({
-                  title: "Монополія",
-                  city: "Чернівці",
-                  date: "19 жовтня",
-                  time: "17:00",
-                })
-              }
-            >
+
+            <div className="card" onClick={() => openModal({
+            })}>
+            
               <div className="top-right">
                 <img src={starImg} alt="Зірка" />
               </div>
@@ -86,7 +91,6 @@ const Rooms = () => {
               </div>
             </div>
 
-            {/* Інші картки можна залишити без openModal, якщо не потрібна взаємодія */}
           </div>
         </div>
       </main>
@@ -170,13 +174,8 @@ const Rooms = () => {
                 переговори. Ідеально підходить для вечора з друзями або родиною.
                 Випробуй себе у світі великих грошей!
               </div>
-              <div className="modal_button-right">Ціна: 200 грн</div>
-              <button
-                className="modal-button"
-                onClick={() => setIsModalOpen(false)}
-              >
-                Підтверидити запис
-              </button>
+              <div className="modal_cost">Ціна: 200 грн</div>
+              <button className="modal-button" onClick={() => setIsModalOpen(false)}>Підтверидити запис</button>
             </div>
           </div>
         </div>
