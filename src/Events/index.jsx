@@ -1,9 +1,6 @@
 import React from "react";
 import './index.css';
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import { NavLink } from "react-router-dom";
 import monopolyImg from '../assets/img/image3.png';
 import starImg from '../assets/img/star.svg';
 import photo from "../assets/img/headerPhoto.png";
@@ -11,27 +8,15 @@ import aboutUs1 from "../assets/img/aboutUs1.png";
 import aboutUs2 from "../assets/img/aboutUs2.png";
 
 const Home = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash === "#about") {
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
-
   return (
     <>
       <header className="header">
         <div className="logo">TableCrew</div>
         <nav className="navLinks">
-          <a href="#" className="nav-link-active">Головна</a>
+          <a href="/" className="nav-link">Головна</a>
           <Link to="/rooms" className="nav-link">Кімнати</Link>
-          <Link to="#about" className="nav-link">Про нас</Link>
-          <Link to="/events" className="nav-link">Заходи</Link>
+          <Link to="/#about" className="nav-link">Про нас</Link>
+          <Link to="/events" className="nav-link-active">Заходи</Link>
         </nav>
         <div className="headerLinks">
           <Link className="account" to='/account'>
@@ -40,23 +25,10 @@ const Home = () => {
         </div>
       </header>
       <main className="main">
-        <img src={photo} alt="photoHeader" className="photoHeader" />
-        <div className="overlowText">
-          <div className="found">Знайди своїх </div>
-          <div className="subdue">підкорюй світ гри!</div>
-          <Link className="buttonJoin" to="/rooms">Приєднатись</Link>
-        </div>
+        
 
 
-        <div className="aboutUs">
-          <div className="phraseAbout">Кімнати</div>
-          <div className="city-buttons">
-            <button className="city-button active">Чернівці</button>
-            <button className="city-button">Київ</button>
-            <button className="city-button">Львів</button>
-            <button className="city-button">Івано-Франківськ</button>
-            <Link to="/rooms" className="city-link">Більше кімнат...</Link>
-          </div>
+        <div className="rooms">
           <div className="grid">
             <div className="card">
               <div className="top-right">
@@ -143,42 +115,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-
-
-        <div className="aboutUs">
-          <div className="phraseAbout" id="about">Про нас</div>
-          <div className="aboutUsContainer1">
-            <img src={aboutUs1} alt="aboutUs1"></img>
-            <div>
-              TableCrew — це простір, де люди зустрічаються, щоб грати,
-              спілкуватися та створювати незабутні спогади за настільними
-              іграми. Ми об’єднуємо новачків і досвідчених гравців, щоб разом
-              підкорювати світ гри. Наша мета — створити дружню спільноту
-              однодумців, де кожен може знайти компанію для гри, відпочити від
-              буденності та відкрити для себе нові ігрові враження.
-            </div>
-          </div>
-          <div className="aboutUsContainer2">
-            <div>
-              На нашому сайті ти можеш: знайти і приєднатися до ігрової
-              зустрічі; створити власну подію; познайомитись із новими людьми,
-              які поділяють твоє хобі. Ми підтримуємо різноманітні формати ігор:
-              від класичних до сучасних стратегій, від кооперативних до змагань
-              один на один. Знайди своїх — підкорюй світ гри! Ласкаво просимо до
-              TableCrew — твого ігрового екіпажу!
-            </div>
-            <img src={aboutUs2} alt="aboutUs2"></img>
-          </div>
-        </div>
       </main>
       <footer className="footer">
         <div className="footerLogo">TableCrew</div>
         <nav className="navLinks down">
-          <a href="#" className="footer-nav-link-active">Головна</a>
+          <Link to="/" className="footer-nav-link">Головна</Link>
           <Link to="/rooms" className="footer-nav-link">Кімнати</Link>
           <Link to="/#about" className="footer-nav-link">Про нас</Link>
-          <Link to="/events" className="footer-nav-link">Заходи</Link>
+          <Link to="/events" className="footer-nav-link-active">Заходи</Link>
         </nav>
         <div className="allConnection">
           <div className="contacts">

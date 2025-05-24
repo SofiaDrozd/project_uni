@@ -111,3 +111,14 @@ td:first-child {
   gap: 20px;
   font-size: 40px;
 }
+
+.account-active {
+  text-decoration: none;
+  color: #f6f9fe;
+  font-size: 30px;
+  border-bottom: 2px solid #f6f9fe;
+  padding-bottom: 0.5px;
+  display: inline-block;
+}
+
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 import monopolyImg from "../assets/img/image3.png";
@@ -36,15 +36,15 @@ const Rooms = () => {
           <Link to="/" className="nav-link">
             Головна
           </Link>
-          <Link to="/rooms" className="nav-link">
+          <Link to="/rooms" className="nav-link-active">
             Кімнати
           </Link>
-          <a href="#" className="nav-link">
+          <Link to="/#about" className="nav-link">
             Про нас
-          </a>
-          <a href="#" className="nav-link">
+          </Link>
+          <Link to="/events" className="nav-link">
             Заходи
-          </a>
+          </Link>
         </nav>
         <div className="headerLinks">
           <Link className="account" to="/account">
@@ -98,15 +98,10 @@ const Rooms = () => {
       <footer className="footer">
         <div className="footerLogo">TableCrew</div>
         <nav className="navLinks down">
-          <a href="#" className="nav-link nav-link--mod">
-            Головна
-          </a>
-          <a href="#" className="nav-link nav-link--mod">
-            Кімнати
-          </a>
-          <a href="#" className="nav-link nav-link--mod">
-            Про нас
-          </a>
+          <Link to="/" className="footer-nav-link">Головна</Link>
+          <Link to="/rooms" className="footer-nav-link-active">Кімнати</Link>
+          <Link to="/#about" className="footer-nav-link">Про нас</Link>
+          <Link to="/events" className="footer-nav-link">Заходи</Link>
         </nav>
         <div className="allConnection">
           <div className="contacts">

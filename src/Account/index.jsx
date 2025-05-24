@@ -15,15 +15,11 @@ const Account = () => {
           <Link to="/rooms" className="nav-link">
             Кімнати
           </Link>
-          <a href="#" className="nav-link">
-            Про нас
-          </a>
-          <a href="#" className="nav-link">
-            Заходи
-          </a>
+          <Link to="/#about" className="nav-link">Про нас</Link>
+          <Link to="/events" className="nav-link">Заходи</Link>
         </nav>
         <div className="headerLinks">
-          <a className="account" href="#">
+          <a className="account-active" href="#">
             Акаунт
           </a>
         </div>
@@ -64,15 +60,10 @@ const Account = () => {
       <footer className="footer">
         <div className="footerLogo">TableCrew</div>
         <nav className="navLinks down">
-          <a href="#" className="nav-link nav-link--mod">
-            Головна
-          </a>
-          <a href="#" className="nav-link nav-link--mod">
-            Кімнати
-          </a>
-          <a href="#" className="nav-link nav-link--mod">
-            Про нас
-          </a>
+          <Link to="/" className="footer-nav-link">Головна</Link>
+          <Link to="/rooms" className="footer-nav-link">Кімнати</Link>
+          <Link to="/#about" className="footer-nav-link">Про нас</Link>
+          <Link to="/events" className="footer-nav-link">Заходи</Link>
         </nav>
         <div className="allConnection">
           <div className="contacts">
