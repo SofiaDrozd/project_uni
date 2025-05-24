@@ -4,6 +4,9 @@ import "./index.css";
 const CreateRoom = () => {
   return (
     <>
+      <div className="topBar">
+        <button className="logoutBtn">Вийти</button>
+      </div>
       <div className="createRoom">
         <div className="createRoomPhrase">Створення заходу</div>
         <form className="createRoomForm">
@@ -23,6 +26,21 @@ const CreateRoom = () => {
           ></input>
 
           <input
+            type="text"
+            placeholder="Місце проведення"
+            name="venue"
+            required
+          ></input>
+
+          <input
+            type="text"
+            placeholder="Опис гри"
+            name="description"
+            required
+            max={10000}
+          ></input>
+
+          <input
             type="number"
             min="0"
             step={0.1}
@@ -33,19 +51,12 @@ const CreateRoom = () => {
           <input type="date" name="dateOfGame" required></input>
           <input type="time" name="timeOfStart" required></input>
 
-          <input
-            type="file"
-            accept="image/*"
-            name="photo"
-            required
-           
-          />
+          <input type="file" accept="image/*" name="photo" required />
 
           <button type="submit" className="createRoomButton">
             Створити
           </button>
         </form>
-        <button className="logoutBtn">Вийти</button>
       </div>
     </>
   );
