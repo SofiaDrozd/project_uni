@@ -6,6 +6,7 @@ import Home from "./Home";
 import CreateRoom from "./CreateRoom";
 import Account from "./Account";
 import Rooms from "./Rooms";
+import Events from "./Events";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/rooms" element={<Rooms></Rooms>} />
         <Route path="/account" element={<Account></Account>}></Route>
+        <Route path="/events" element={<Events></Events>}></Route>
       </Routes>
     </Router>
   );

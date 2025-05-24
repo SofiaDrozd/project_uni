@@ -1,0 +1,19 @@
+.footer-nav-link {
+  color: #191919;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-nav-link:hover {
+  border-bottom: 1px solid #191919;
+}
+
+.footer-nav-link-active {
+  text-decoration: none;
+  color: #191919;
+  font-size: 18px;
+  border-bottom: 2px solid #191919;
+  padding-bottom: 0.5px;
+  display: inline-block;
+}
